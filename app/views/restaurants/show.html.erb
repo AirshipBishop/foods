@@ -1,29 +1,38 @@
-<%= image_tag @restaurant.image.url(:medium) %>
-
-<p>
-  <strong>Name:</strong>
-  <%= @restaurant.name %>
-</p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @restaurant.address %>
-</p>
-
-<p>
-  <strong>Zip:</strong>
-  <%= @restaurant.zip %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @restaurant.phone %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @restaurant.description %>
-</p>
+<div class="panel panel-defualt">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag @restaurant.image.url(:medium) %>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td><strong>Restaurant:</strong></td>
+                  <td><%= @restaurant.name %></td>
+                </tr>
+                <tr>
+                  <td><strong>Address:</strong></td>
+                  <td><%= @restaurant.address %></td>
+                </tr>
+                <tr>
+                  <td><strong>Zip:</strong></td>
+                  <td><%= @restaurant.zip %></td>
+                </tr>
+                <tr>
+                  <td><strong>Phone Number:</strong></td>
+                  <td><%= @restaurant.phone %></td>
+                </tr>
+                <tr>
+                  <td><strong>Description:</strong></td>
+                  <td><%= @restaurant.description %></td>
+                </tr>
+              </tbody>
+            </table>            
+          </div>
+      </div>      
+    </div>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>
