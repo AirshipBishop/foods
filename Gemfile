@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 
 
 #Non-Default Gems start here.
-gem 'bcrypt', '~> 3.1.11', platforms: [:ruby, :x64_mingw, :mingw]
+
 #Devise - User authentication
 gem 'devise', '~> 4.3'
 #fix
