@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 
 #Devise - User authentication
 gem 'devise', '~> 4.3'
+
+gem "paperclip", "~> 4.3"
 #fix
 
 group :development, :test do
