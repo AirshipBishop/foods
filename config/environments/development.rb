@@ -55,4 +55,7 @@ Rails.application.configure do
 
   #Config mailer for Devise user authentication
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  #config for paperclip, install gnuwin32 and paperclip
+  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
 end
