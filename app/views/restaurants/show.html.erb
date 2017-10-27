@@ -42,6 +42,7 @@
               <div class="reviews">
                 <p><%= review.rating %></p>
                 <p><%= review.comment %></p>
+                <p><%= link_to 'Destroy', restaurant_review_path(review.restaurant, review), method: :delete, data: {confirm: "Are you sure? This kills the review" } %>
               </div>
           <% end %>
         <% end %>
@@ -51,4 +52,5 @@
 </div>
 
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+<%= link_to 'Destroy', restaurant_path(@restaurant), method: :delete, data: {confirm: "Are you sure? This kills the restaurant" } %> |
 <%= link_to 'Back', restaurants_path %>

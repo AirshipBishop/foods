@@ -6,14 +6,13 @@
 <% end %>
 
 <div class="panel panel-default">
-  <div class="pane-body">
+  <div class="panel-body">
     <div class="row">
       <% @restaurants.each do |restaurant| %>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
             <%= link_to (image_tag restaurant.image.url(:medium), class: 'image'), restaurant %>
-          </div>
-
+          </div>        
           <ul>
           <li><%= restaurant.name %></li>
           <li><%= restaurant.address %></li>
@@ -21,7 +20,8 @@
           <li><%= restaurant.phone %></li>
           <li><%= restaurant.description %></li>
         </ul>
-        </div>    
+      </div> 
       <% end %>
     </div>
+  </div>
 </div>

@@ -35,6 +35,7 @@ class ReviewsController < ApplicationController
   end
 
   def destroy
+    @review.restaurant_id = @restaurant_id
     @review.destroy
     redirect_to root_path
   end

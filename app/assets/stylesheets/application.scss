@@ -19,7 +19,32 @@
 @import "bootstrap";
 
 body{
-	background: #AA4847;
+	background: #806b6d;
+}
+
+.navbar{
+	background: #332a2d;
+	color: #e8d7d3;
+	border:none;
+	border-radius: 0;
+	box-shadow:none;
+}
+
+.active{
+    color: white;
+}
+
+.nav.navbar-nav li a{
+	color: white;
+}
+
+a.navbar-brand{
+	color: white;
+}
+
+.nav.navbar-nav li a:hover{
+	background: white;
+	color: black;
 }
 
 .review_title {
@@ -34,3 +59,7 @@ body{
 	}
 }
 
+.panel {
+	background: #332a2d;
+	color: #e8d7d3;
+}
